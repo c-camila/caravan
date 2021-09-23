@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caravan - Planos</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog"
+    aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Acessar Conta</h5>
+          <button type="button" class="close" data-dismiss="modal"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">E-mail</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input"
+                id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Continuar
+                Logado</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na
+              conta</button>
+            <small class="form-text text-muted">Esqueceu a senha?<a
+                href="#"></a>
+              Clique aqui.</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Modal -->
+  <nav
+    class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+    <a href="index.html" class="navbar-brand">
+      <img src="img/caravan.svg" alt="Caravan">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Abrir Navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+            role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Locais</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="local-africa.html">África</a>
+            <a class="dropdown-item" href="local-america.html">América</a>
+            <a class="dropdown-item" href="local-antartica.html">Antártica</a>
+            <a class="dropdown-item" href="local-asia.html">Ásia</a>
+            <a class="dropdown-item" href="local-europa.html">Europa</a>
+            <a class="dropdown-item" href="local-oceania.html">Oceania</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal"
+            data-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-info ml-md-2"
+            href="inscricao.html">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--fechar navegação-->
+
+  <section class="container">
+    <div class="text-center text-uppercase my-5">
+      <span class="h6 d-block text-uppercase">temos planos para todos os
+        sonhos</span>
+      <h1 class="display-4 text-info">Compre já o seu</h1>
+    </div>
+    <div class="row">
+      <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Gold</h2>
+          <ul class="list-unstyled line-list li list-end li+li">
+            <li><span data-toggle="tooltip" data-placement="right"
+                title="Isso mesmo, são 20 dias totais de viagem.">➜ 20 dias de
+                viagem</span></li>
+            <li>➜ 3 destinos diferentes</li>
+            <li>➜ Hospedagem inclusa</li>
+            <li>➜ Eventos Exclusivos</li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <select class="form-control bg-light" id="inputContinentes">
+                <option>Selecione</option>
+                <option>África</option>
+                <option>América</option>
+                <option>Antártica</option>
+                <option>Ásia</option>
+                <option>Europa</option>
+                <option>Oceania</option>
+              </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="inscricao.html"
+                class="btn btn-primary btn-lg btn-block">Comprar
+                Plano</a>
+            </div>
+            <div class="col">
+              <span class="h4">R$ 16.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Platinum <span class="badge badge-warning">Novo</span></h2>
+          <ul class="list-unstyled line-list li list-end li+li">
+            <li><span data-toggle="tooltip" data-placement="right"
+                title="Isso mesmo, são 45 dias totais de viagem.">➜ 45 dias de
+                viagem</span></li>
+            <li>➜ 5 destinos diferentes</li>
+            <li>➜ Hospedagem inclusa</li>
+            <li>➜ Eventos Exclusivos</li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <select class="form-control bg-light" id="inputContinentes">
+                <option>Selecione</option>
+                <option>África</option>
+                <option>América</option>
+                <option>Antártica</option>
+                <option>Ásia</option>
+                <option>Europa</option>
+                <option>Oceania</option>
+              </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="inscricao.html"
+                class="btn btn-primary btn-lg btn-block">Comprar
+                Plano</a>
+            </div>
+            <div class="col">
+              <span class="h4">R$ 30.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="bg-dark text-white mt-5">
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6 text-uppercase">Páginas</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6 text-uppercase">Locais</h4>
+          <ul class="list-unstyled">
+            <li><a href="local-africa.html">África</a></li>
+            <li><a href="local-america.html">América</a></li>
+            <li><a href="local-antartica.html">Antártica</a></li>
+            <li><a href="local-asia.html">Ásia</a></li>
+            <li><a href="local-europa.html">Europa</a></li>
+            <li><a href="local-oceania.html">Oceania</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-6">
+          <h4 class="h6 text-uppercase">Contato</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>+55 11 99999-9999</li>
+            <li>Seg. à Sex. das 9h às 19h</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-6">
+          <h4 class="h6 text-uppercase">Redes Sociais</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-info btn-sm btn-block mb-2" href="#"
+                style="max-width: 140px;">Facebook</a></li>
+            <li><a class="btn btn-outline-info btn-sm btn-block mb-2" href="#"
+                style="max-width: 140px;">Instagram</a></li>
+            <li><a class="btn btn-outline-info btn-sm btn-block mb-2" href="#"
+                style="max-width: 140px;">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light text-center text-dark py-3">
+      <p class="mb-0">Caravan © 2021. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
